@@ -8,7 +8,7 @@
 .navbar {
   position: relative;
   display: flex;
-  height: 10vh;
+  height: 100px;
   align-items: center;
   justify-content: space-between;
   max-width: 75vw;
@@ -17,14 +17,15 @@
 }
 .main {
   background-image: url(assets/images/bg.jpg);
+  top: -13px;
   position: relative;
-  height: 85vh;
-  background-size: max(1000px, 100vw);
+  height: 700px;
+  background-size: max(1200px, 100vw);
   background-position: center center;
   background-repeat: no-repeat;
 }
 .main .box {
-  height: 85vh;
+  height: 700px;
   width: 100%;
   opacity: 0.64;
   position: absolute;
@@ -133,7 +134,7 @@ body {
 }
 
 .butns {
-  display: inline-flex;
+  display: inline;
   gap: 12px;
 }
 
@@ -146,12 +147,6 @@ body {
   color: white;
   justify-content: center;
   align-items: center;
-}
-
-@media screen and (max-width: 1294px) {
-  .first{
-    flex-wrap: wrap;
-  }
 }
 
 .secimg {
@@ -169,7 +164,7 @@ body {
   width: 345px;
   right: 112px;
 }
-.first-vid{
+.first-vid {
   top: 117px !important;
   width: 423px !important;
   right: 60px !important;
@@ -196,14 +191,14 @@ body {
   width: 534px;
   height: 200px;
 }
-.sep{
+/* .sep {
   bottom: -18px;
-}
+} */
 
 .faq {
   background-color: black;
   color: white;
-  height: 100vh;
+  height: 760px;
 }
 .faqbox:hover {
   transition: all 0.4s ease-in;
@@ -275,4 +270,82 @@ footer {
 .down {
   transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
+}
+
+@media only screen and (max-width: 1291px) {
+  nav img{
+    width: 117px;
+    left: 18px;
+  }
+  .navbar {
+    max-width: 100vw;
+  }
+  .first {
+    flex-wrap: wrap;
+    height: 80vh;
+  }
+
+  .first > div :nth-child(1) {
+    font-size: 32px;
+  }
+  .first > div :nth-child(2) {
+    font-size: 18px;
+  }
+
+  .faq h2 {
+    font-size: 32px;
+  }
+
+  .secimg img {
+    width: 420px;
+  }
+  .secimg video {
+    top: 28px;
+    width: 256px;
+    right: 86px;
+  }
+  .first-vid {
+    top: 101px !important;
+    width: 302px !important;
+    right: 60px !important;
+  }
+  .hero > :nth-child(1) {
+    font-size: 32px;
+  }
+}
+
+@media only screen and (max-width: 1291px) {
+  /* .faq{
+    height: 109vh;
+  } */
+  .footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .footer a {
+    font-size: 14px;
+  }
+  .footer-item {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+.faq{
+  height: 888px;
+}
+
+}
+
+@media only screen and (max-width: 673px) {
+  .red-btn{
+    padding: 10px 16px;
+    left: 98px;
+    top: 12px;
+    position: relative;
+  }
+  .main input{
+    width: 213px;
+  }
+
 }
